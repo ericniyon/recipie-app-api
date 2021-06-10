@@ -17,7 +17,7 @@ class AdminSiteTests(TestCase):
    name = 'test user name'
   )
 
- def test_user_listed(self):
+ def test_users_listed(self):
   """ chacking if user are listed """
   url = reverse('admin:core_user_changelist')
   res = self.client.get(url)
